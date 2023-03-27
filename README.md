@@ -29,13 +29,13 @@ Before installing the scheduled job, it's recommened to try it running once to s
 This job will create a process at the startup to remove the language. It may result in a `cmd.exe` window appearing for a short time. If that's something you want to avoid, consider trying other solutions, or finding other way to make the scheduled job work.
 
 1. Download the repository.
-2. Right-click on [scripts/job/install-startup-job.ps1](./scripts/install-startup-job.ps1) file and select the "Run with PowerShell" option.
+2. Right-click on [scripts/job/install-startup-job.ps1](./scripts/job/install-startup-job.ps1) file and select the "Run with PowerShell" option.
 3. When it asks you for elevated privileges, press "Yes". You can check the code it wants to run by looking inside the file you right-clicked.
 4. The scheduled job should be installed. To verify everything works, restart the computer and see if "English (United Kingdom)" layout is gone. 
 
 ### Uninstall the scheduled job
 
 1. Download the repository.
-2. Right-click on [scripts/job/uninstall-startup-job.ps1](./scripts/uninstall-startup-job.ps1) file and select the "Run with PowerShell" option.
+2. Right-click on [scripts/job/uninstall-startup-job.ps1](./scripts/job/uninstall-startup-job.ps1) file and select the "Run with PowerShell" option.
 3. When it asks you for elevated privileges, press "Yes". You can check the code it wants to run by looking inside the file you right-clicked.
 4. The scheduled job should be uninstalled. You can check the "Task Scheduler" to verify this.
